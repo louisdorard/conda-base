@@ -2,7 +2,7 @@
 apt-get update
 
 # as vagrant user
-echo "alias ipynb='ipython notebook --ip=0.0.0.0 /vagrant/'" >> .bashrc
+echo "alias ipynb='ipython notebook --ip=0.0.0.0 /vagrant/ipynb/'" >> .bashrc
 source .bashrc
 wget http://repo.continuum.io/miniconda/Miniconda-3.5.2-Linux-x86_64.sh # this is the version based on Python 2
 bash Miniconda-3.5.2-Linux-x86_64.sh # accept license when prompted
