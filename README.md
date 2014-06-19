@@ -1,8 +1,8 @@
-# mycondabox
+# mycondaenv
 
-Provisioning of a Vagrant base box with [Miniconda](http://conda.pydata.org/miniconda.html) and packages I use for data-related stuff.
+Source for building a Docker image or a Vagrant base box that has [Miniconda](http://conda.pydata.org/miniconda.html) and packages I use for data-related stuff.
 
-It includes:
+The environement includes:
 
  * Python 2.7
  * Miniconda to install software packages with [conda](https://github.com/conda/conda)
