@@ -1,8 +1,10 @@
-# mycondaenv
+# conda-base
 
-Source for building a Docker image or a Vagrant base box that has [Miniconda](http://conda.pydata.org/miniconda.html) and packages I use for data-related stuff.
+Build a Docker image or a Vagrant base box off of dev-base, with [Miniconda](http://conda.pydata.org/miniconda.html) and selected packages. Intended to be used as an environment to run data-related jobs and as a development environment.
 
-The environement includes:
+The Dockerfile is inspired from https://registry.hub.docker.com/u/nfaggian/anaconda/
+
+The environment includes:
 
  * Python 2.7
  * Miniconda to install software packages with [conda](https://github.com/conda/conda)
@@ -11,3 +13,5 @@ The environement includes:
   	* serves .ipynb files located in the ipynb/ directory of this repo (accessed at /vagrant/ipynb in the VM)
  * Pandas
  * Scikit-learn
+ * s3cmd, which is useful to dl/ul data to Amazon S3
+ 
