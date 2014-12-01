@@ -11,3 +11,8 @@ RUN /bin/bash Miniconda-3.5.2-Linux-x86_64.sh -b -p /work/anaconda/
 RUN rm Miniconda-3.5.2-Linux-x86_64.sh
 RUN /work/anaconda/bin/conda update conda
 RUN /work/anaconda/bin/conda install pandas scikit-learn ipython-notebook --yes
+RUN echo "export PATH=\"\$PATH:/work/anaconda/bin\"" >> ~/.zshrc
+
+# IPython notebooks
+RUN mkdir -p /ipynb
+RUN echo "alias ipynb='ipython notebook --ip=0.0.0.0 /ipynb/'" >> ~/.zshrc
